@@ -21,21 +21,21 @@ int main(){
 
 	int i=1;
 	do {
-	interest = 	loan * (rate/100);
-	total = loan + interest;
-	cout << fixed << setprecision(2); 
-	cout << setw(13) << left << i;
-	cout << setw(13) << left << loan;
-	cout << setw(13) << left << interest;
-	cout << setw(13) << left << total;
-	if (p_amount > total) {
-		p_amount = total;
-	}
-	cout << setw(13) << left << p_amount;
-	loan = total - p_amount;
-	cout << setw(13) << left << loan;
-	cout << "\n";
-	i++;
+		interest = 	loan * (rate/100);
+		total = loan + interest;
+		cout << fixed << setprecision(2); 
+		cout << setw(13) << left << i;
+		cout << setw(13) << left << loan;
+		cout << setw(13) << left << interest;
+		cout << setw(13) << left << total;
+		if (p_amount > total) {
+			p_amount = total;
+		}
+		cout << setw(13) << left << p_amount;
+		loan = total - p_amount;
+		cout << setw(13) << left << loan;
+		cout << "\n";
+		i++;
 	}while( loan != 0);
 	
 	return 0;
